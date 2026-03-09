@@ -55,12 +55,15 @@ if(excesso <= 0){
     console.log(Valor da penalidade: R$${valorMulta.toFixed(2)});
 }
 // Task Aposentadoria
-let idade = parseInt(prompt("Digite sua idade"))
-let contribuicao = parseInt(prompt("Digite o seu tempo de contribuição"))
+let idade = parseInt(prompt("Digite sua idade"));
+let contribuicao = parseInt(prompt("Digite o seu tempo de contribuição"));
 
-if(idade >= 65 ){
-        console.log("Você ja pode se aposentar!")
-    }else{
-         if(contribuicao >= 30 && idade >= 60 )
-            console.log("Você pode se aposentar pelo seu tempo de contribuição!")
-    }
+if (idade >= 65) {
+    console.log("Você já pode se aposentar!");
+} 
+else if (contribuicao >= 30 && idade >= 60) {
+    console.log("Você pode se aposentar pelo seu tempo de contribuição!");
+} 
+else {
+    console.log("Você não pode se aposentar ainda!");
+}
